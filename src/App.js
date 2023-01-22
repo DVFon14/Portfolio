@@ -1,9 +1,12 @@
-import "./App.css";
+//import "./App.css";
+import ButtonAppBar from "./nav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">App</header>
+    <div>
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <ButtonAppBar />
+      <p>Here is where stuff will go!</p>
     </div>
   );
 }
