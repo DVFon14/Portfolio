@@ -1,12 +1,19 @@
 //import "./App.css";
-import ButtonAppBar from "./nav";
+import Contact from "./Pages/contact";
+import Home from "./Pages/home";
+import Projects from "./Pages/projects";
+import Resume from "./Pages/resume";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <ButtonAppBar />
-      <p>Here is where stuff will go!</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
     </div>
   );
 }
