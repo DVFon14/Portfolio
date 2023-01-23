@@ -15,7 +15,7 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
-function Resume() {
+function Home() {
   return (
     <>
       <ButtonAppBar />
@@ -63,4 +63,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default Home;
