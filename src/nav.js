@@ -11,23 +11,30 @@ function ButtonAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Dulce Fonseca Chavez
+          </Typography> */}
+
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Link to="/">
+              <Button style={{ color: "#ffffff" }}>Dulce Fonseca</Button>
+            </Link>
           </Typography>
+
           <Link to="/">
-            <Button color="inherit">Home</Button>
+            <Button style={{ color: "#ffffff" }}>Home</Button>
           </Link>
 
           <Link to="/resume">
-            <Button color="inherit">Resume</Button>
+            <Button style={{ color: "#ffffff" }}>Resume</Button>
           </Link>
 
           <Link to="/projects">
-            <Button color="inherit">Projects</Button>
+            <Button style={{ color: "#ffffff" }}>Projects</Button>
           </Link>
 
           <Link to="/contact">
-            <Button color="inherit">Contact</Button>
+            <Button style={{ color: "#ffffff" }}>Contact</Button>
           </Link>
         </Toolbar>
       </AppBar>
