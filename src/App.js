@@ -1,8 +1,8 @@
 //import "./App.css";
-import Contact from "./Pages/contact";
+import Contact from "./Pages/contact/contact";
 import Home from "./Pages/home";
 import Projects from "./Pages/projects";
-import Resume from "./Pages/resume";
+import Resume from "./resume/resume";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
