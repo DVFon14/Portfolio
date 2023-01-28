@@ -1,6 +1,5 @@
 import ButtonAppBar from "../nav";
 import game2 from "../images/game2.png";
-import projectOne from "./projects/project1";
 
 import { Router, Route, Link, Routes } from "react-router-dom";
 
@@ -54,7 +53,7 @@ function Projects() {
         <Grid
           container
           spacing={1}
-          sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 10 }}
+          sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}
         >
           {/*spacing betweem column 1 and 2*/}
 
@@ -88,7 +87,17 @@ function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  TwoTruthsAndALie
+                  TwoTruthsAndALie <br />
+                </a>
+                <br />
+                Repository: <br />
+                <a
+                  href="https://github.com/DVFon14/TwoTruthsAndALie
+                  "
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  TwoTruthsAndALie GitHub Repo
                 </a>
               </Typography>
             </Grid>
@@ -98,100 +107,7 @@ function Projects() {
 
       <br />
       <br />
-      <Paper
-        sx={{
-          p: 2,
-          margin: "auto",
-          maxWidth: 1300,
-          flexGrow: 1,
-          backgroundColor: (theme) =>
-            theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-        }}
-      >
-        <Grid
-          container
-          spacing={1}
-          sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 10 }}
-        >
-          {/*spacing betweem column 1 and 2*/}
-
-          <Grid item>
-            <ButtonBase sx={{ width: 600, height: 400 }}>
-              {" "}
-              {/* width from left, height of the total container */}
-              <Img alt="SpaceBattleProject" height="400" width="400" />
-            </ButtonBase>
-          </Grid>
-
-          <Grid item xs={12} sm container>
-            <Grid item xs container direction="column" spacing={2}>
-              <Typography gutterBottom variant="subtitle1" component="div">
-                Summary: <br />
-                Aliens are attacking Earth, and it is up to the user to save the
-                world.
-                <br />
-                The user has a fixed hull power of 20 and a fixed firepower of
-                6, but the user's accuracy is randomized from between x and y.{" "}
-                <br />
-                There are 6 ships that must be defeated, one at a time. Their
-                hull, firepower, and accuracy are each randomized. <br />
-                <br />
-                Technology: <br />
-                This game is entirely played on the console and was written
-                using strictly Javascript. <br />
-                <br />
-                Website: <br />
-                <a></a>
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Paper>
-      <br />
-      <br />
-      <Paper
-        sx={{
-          p: 2,
-          margin: "auto",
-          maxWidth: 1300,
-          flexGrow: 1,
-          backgroundColor: (theme) =>
-            theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-        }}
-      >
-        <Grid
-          container
-          spacing={1}
-          sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 10 }}
-        >
-          {/*spacing betweem column 1 and 2*/}
-
-          <Grid item>
-            <ButtonBase sx={{ width: 600, height: 400 }}>
-              {" "}
-              {/* width from left, height of the total container */}
-              <Img alt="TBD" height="400" width="400" />
-            </ButtonBase>
-          </Grid>
-
-          <Grid item xs={12} sm container>
-            <Grid item xs container direction="column" spacing={2}>
-              <Typography gutterBottom variant="subtitle1" component="div">
-                Summary: <br />
-                <br />
-                Technology: <br />
-                This is a full stack application that makes use of the entire
-                MERN stack, MongoDB, Express, React, and Node. Within React, I
-                make use of Javascript and HTML.
-                <br />
-                <br />
-                Website: <br />
-                <a></a>
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Paper>
+      
     </>
   );
 }
@@ -284,3 +200,107 @@ export default Projects;
 //   </Grid>
 // </Grid>
 // </Grid>
+
+
+//============ If I want to add other projects =============//
+//==========================================================//
+//==========================================================//
+//==========================================================//
+
+{/* <Paper
+        sx={{
+          p: 2,
+          margin: "auto",
+          maxWidth: 1300,
+          flexGrow: 1,
+          backgroundColor: (theme) =>
+            theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+        }}
+      >
+        <Grid
+          container
+          spacing={1}
+          sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 10 }}
+        >
+          {/*spacing betweem column 1 and 2*/}
+
+      //     <Grid item>
+      //       <ButtonBase sx={{ width: 600, height: 400 }}>
+      //         {" "}
+      //         {/* width from left, height of the total container */}
+      //         <Img alt="SpaceBattleProject" height="400" width="400" />
+      //       </ButtonBase>
+      //     </Grid>
+
+      //     <Grid item xs={12} sm container>
+      //       <Grid item xs container direction="column" spacing={2}>
+      //         <Typography gutterBottom variant="subtitle1" component="div">
+      //           Summary: <br />
+      //           Aliens are attacking Earth, and it is up to the user to save the
+      //           world.
+      //           <br />
+      //           The user has a fixed hull power of 20 and a fixed firepower of
+      //           6, but the user's accuracy is randomized from between x and y.{" "}
+      //           <br />
+      //           There are 6 ships that must be defeated, one at a time. Their
+      //           hull, firepower, and accuracy are each randomized. <br />
+      //           <br />
+      //           Technology: <br />
+      //           This game is entirely played on the console and was written
+      //           using strictly Javascript. <br />
+      //           <br />
+      //           Website: <br />
+      //           <a></a>
+      //         </Typography>
+      //       </Grid>
+      //     </Grid>
+      //   </Grid>
+      // </Paper>
+      // <br />
+      // <br />
+      // <Paper
+      //   sx={{
+      //     p: 2,
+      //     margin: "auto",
+      //     maxWidth: 1300,
+      //     flexGrow: 1,
+      //     backgroundColor: (theme) =>
+      //       theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+      //   }}
+      // >
+      //   <Grid
+      //     container
+      //     spacing={1}
+      //     sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 10 }}
+      //   >
+      //     {/*spacing betweem column 1 and 2*/}
+
+      //     <Grid item>
+      //       <ButtonBase sx={{ width: 600, height: 400 }}>
+      //         {" "}
+      //         {/* width from left, height of the total container */}
+      //         <Img alt="TBD" height="400" width="400" />
+      //       </ButtonBase>
+      //     </Grid>
+
+      //     <Grid item xs={12} sm container>
+      //       <Grid item xs container direction="column" spacing={2}>
+      //         <Typography gutterBottom variant="subtitle1" component="div">
+      //           Summary: <br />
+      //           <br />
+      //           Technology: <br />
+      //           This is a full stack application that makes use of the entire
+      //           MERN stack, MongoDB, Express, React, and Node. Within React, I
+      //           make use of Javascript and HTML.
+      //           <br />
+      //           <br />
+      //           Website: <br />
+      //           <a></a>
+      //         </Typography>
+      //       </Grid>
+      //     </Grid>
+      //   </Grid>
+      // </Paper> */}
+
+
+

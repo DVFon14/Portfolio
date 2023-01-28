@@ -33,9 +33,9 @@ function ButtonAppBar() {
             <Button style={{ color: "#ffffff" }}>Projects</Button>
           </Link>
 
-          <Link to="/contact">
+          {/* <Link to="/contact">
             <Button style={{ color: "#ffffff" }}>Contact</Button>
-          </Link>
+          </Link> */}
         </Toolbar>
       </AppBar>
     </Box>
