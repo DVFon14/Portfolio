@@ -16,20 +16,20 @@ function ButtonAppBar() {
           </Typography> */}
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none' }} >
               <Button style={{ color: "#ffffff" }}>Dulce Fonseca</Button>
             </Link>
           </Typography>
 
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: 'none' }} >
             <Button style={{ color: "#ffffff" }}>Home</Button>
           </Link>
 
-          <Link to="/resume">
+          <Link to="/resume" style={{ textDecoration: 'none' }} >
             <Button style={{ color: "#ffffff" }}>Resume</Button>
           </Link>
 
-          <Link to="/projects">
+          <Link to="/projects" style={{ textDecoration: 'none' }} >
             <Button style={{ color: "#ffffff" }}>Projects</Button>
           </Link>
 
