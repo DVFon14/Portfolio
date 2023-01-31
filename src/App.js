@@ -1,5 +1,4 @@
 //import "./App.css";
-import Contact from "./Pages/contact/contact";
 import Home from "./Pages/home";
 import Projects from "./Pages/projects";
 import Resume from "./resume/resume";

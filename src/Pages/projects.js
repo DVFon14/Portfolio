@@ -1,8 +1,6 @@
 import ButtonAppBar from "../nav";
 import game2 from "../images/game2.png";
 
-import { Router, Route, Link, Routes } from "react-router-dom";
-
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
@@ -86,7 +84,8 @@ function Projects() {
                 <a
                   href="https://dvfon14.github.io/TwoTruthsAndALie/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  
                 >
                   TwoTruthsAndALie <br />
                 </a>
@@ -96,7 +95,7 @@ function Projects() {
                   href="https://github.com/DVFon14/TwoTruthsAndALie
                   "
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   TwoTruthsAndALie GitHub Repo
                 </a>

@@ -23,7 +23,7 @@ function Resume() {
       <br />
       <center>
         <h3>To see my official resume, click on the link below</h3>
-        <a href={myResume} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }} >
+        <a href={myResume} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }} >
           Resume
         </a>
       </center>
