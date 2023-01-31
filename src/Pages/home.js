@@ -36,14 +36,18 @@ function Home() {
               <br />
               Connect with me on LinkedIn
               <center>
-                <LinkedInIcon onClick={event =>  window.location.href='https://www.linkedin.com/in/dulce-fonseca-chavez-280146251/'} />
+                <ButtonBase
+                  href="https://www.linkedin.com/in/dulce-fonseca-chavez-280146251/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedInIcon />
+                </ButtonBase>
               </center>
             </Typography>
           </ButtonBase>
         </center>
       </Grid>
-
-
     </>
   );
 }
