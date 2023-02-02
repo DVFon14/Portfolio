@@ -1,7 +1,7 @@
-import ButtonAppBar from "../nav";
-import game2 from "../images/game2.png";
-
+//============== React ==============// 
 import React from "react";
+
+//============== Material UI ==============// 
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -9,6 +9,14 @@ import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+
+//============== Files ==============// 
+import ButtonAppBar from "../nav";
+import game2 from "../images/game2.png";
+import mern_app from "../images/mern_app.png"
+
+
+//============== Code ==============// 
 const Img = styled("img")({
   margin: "auto",
   display: "block",
@@ -39,6 +47,7 @@ function Projects() {
         </h3>
       </center>
       <br />
+      
       <Paper
         sx={{
           p: 2,
@@ -98,6 +107,77 @@ function Projects() {
                   rel="noopener noreferrer"
                 >
                   TwoTruthsAndALie GitHub Repo
+                </a>
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+{/* /////////////
+Second image
+//////////// */}
+
+      <br />
+      <br />
+      <Paper
+        sx={{
+          p: 2,
+          margin: "auto",
+          maxWidth: 1300,
+          flexGrow: 1,
+          backgroundColor: (theme) =>
+            theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+        }}
+      >
+        <Grid
+          container
+          spacing={1}
+          sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}
+        >
+          {/*spacing betweem column 1 and 2*/}
+
+          <Grid item>
+            <ButtonBase
+              sx={{ width: 600, height: 400 }}
+              href="https://us-statesadventures.onrender.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              {/* width from left, height of the total container */}
+              <Img alt="game2" src={mern_app} height="300" width="450" />
+            </ButtonBase>
+          </Grid>
+
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Typography gutterBottom variant="subtitle1" component="div">
+                Summary: <br />
+               This website enables you to create "state" cards, and corresponding "adventures" cards, to keep track of all your travels! (Note that you do not have to enter any information on the login page. Simply click on "LOGIN.")
+                <br />
+                <br />
+                Technology: <br />
+                This is a full stack MERN (MongoDB, Epress, React, Node) app. Material UI was used as the frontend framework.<br />
+                <br />
+                Website: <br />
+                <a
+                  href="https://us-statesadventures.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  
+                >
+                  U.S. Adventures Tracker <br />
+                </a>
+                <br />
+                Repository: <br />
+                <a
+                  href="https://github.com/DVFon14/MERNapp
+                  "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  U.S. Adventures Tracker GitHub Repo
                 </a>
               </Typography>
             </Grid>
@@ -257,47 +337,4 @@ export default Projects;
 //   </Grid>
 // </Paper>
 // <br />
-// <br />
-// <Paper
-//   sx={{
-//     p: 2,
-//     margin: "auto",
-//     maxWidth: 1300,
-//     flexGrow: 1,
-//     backgroundColor: (theme) =>
-//       theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//   }}
-// >
-//   <Grid
-//     container
-//     spacing={1}
-//     sx={{ paddingLeft: 10, paddingRight: 10, paddingTop: 10 }}
-//   >
-//     {/*spacing betweem column 1 and 2*/}
-
-//     <Grid item>
-//       <ButtonBase sx={{ width: 600, height: 400 }}>
-//         {" "}
-//         {/* width from left, height of the total container */}
-//         <Img alt="TBD" height="400" width="400" />
-//       </ButtonBase>
-//     </Grid>
-
-//     <Grid item xs={12} sm container>
-//       <Grid item xs container direction="column" spacing={2}>
-//         <Typography gutterBottom variant="subtitle1" component="div">
-//           Summary: <br />
-//           <br />
-//           Technology: <br />
-//           This is a full stack application that makes use of the entire
-//           MERN stack, MongoDB, Express, React, and Node. Within React, I
-//           make use of Javascript and HTML.
-//           <br />
-//           <br />
-//           Website: <br />
-//           <a></a>
-//         </Typography>
-//       </Grid>
-//     </Grid>
-//   </Grid>
-// </Paper> */}
+// <br />*/}
